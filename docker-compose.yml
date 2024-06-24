@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  gestiondepersonas.ui:
+    image: ${DOCKER_REGISTRY-}gestiondepersonasui
+    build:
+      context: .
+      dockerfile: GestionDePersonas.UI/Dockerfile
+
+
